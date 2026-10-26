@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Page</title>
+    <style>
+        /* Basic reset and font styling */
+        body {
+            font-family:  sans-serif;
+            background-color: #4fd1a5;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 30px;
+            width: 300px;
+        }
+
+        
+        .login-container h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 40px;
+        }
+
+       
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+       
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+            font-size: 14px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #061851;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .form-group input:focus {
+            border-color: #007BFF;
+        }
+
+        /* Button container */
+        .button-group {
+            
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Submit button style */
+        .btn-submit {
+            background-color: #007BFF;
+            color: rgb(129, 173, 195);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 48%;
+        }
+
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+
+        /* Reset button style */
+        .btn-reset {
+            background-color: #6c757d;
+            color: rgb(167, 228, 225);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 48%;
+        }
+
+        .btn-reset:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>User Login</h2>
+        
+        <!-- Simple form tag enclosing the required inputs and buttons -->
+        <form action="#" method="POST">
+            
+            <!-- Login (Username / Email) Field -->
+            <div class="form-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+           
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Submit Here</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
